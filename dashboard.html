@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Welcome to Gym Fitness</h1>
+
+        <p>You have successfully logged in.</p>
+
+        <div class="menu">
+
+            <a href="{{ url_for('membership') }}">
+                <button>Membership</button>
+            </a>
+
+            <a href="{{ url_for('trainer') }}">
+                <button>Trainers</button>
+            </a>
+
+            <a href="{{ url_for('workout') }}">
+                <button>Workout</button>
+            </a>
+
+            <a href="{{ url_for('diet') }}">
+                <button>Diet Plan</button>
+            </a>
+
+            <a href="{{ url_for('bmi') }}">
+                <button>BMI Calculator</button>
+            </a>
+
+            <a href="{{ url_for('gallery') }}">
+                <button>Gallery</button>
+            </a>
+
+            <a href="{{ url_for('testimonials') }}">
+                <button>Testimonials</button>
+            </a>
+
+            <a href="{{ url_for('home') }}">
+                <button>Home</button>
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

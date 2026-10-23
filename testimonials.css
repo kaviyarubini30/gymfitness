@@ -1,0 +1,36 @@
+body{
+    background:#111;
+    color:white;
+    font-family:Arial;
+    text-align:center;
+}
+
+.title{
+    margin:30px;
+    font-size:40px;
+}
+
+.container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#222;
+    width:300px;
+    margin:20px;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+
+.card h2{
+    margin-bottom:10px;
+}
+
+.stars{
+    font-size:25px;
+    color:gold;
+    margin-bottom:15px;
+}

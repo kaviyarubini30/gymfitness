@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Fitness - Diet Plan</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/diet.css') }}">
+</head>
+<body>
+
+    <h1 class="title">Healthy Diet Plans</h1>
+
+    <div class="diet-container">
+
+        <div class="diet-card">
+            <h2>🥗 Weight Loss Diet</h2>
+            <ul>
+                <li>Breakfast - Oats & Fruits</li>
+                <li>Lunch - Brown Rice & Vegetables</li>
+                <li>Snack - Green Tea & Nuts</li>
+                <li>Dinner - Grilled Chicken / Salad</li>
+            </ul>
+        </div>
+
+        <div class="diet-card">
+            <h2>💪 Muscle Gain Diet</h2>
+            <ul>
+                <li>Breakfast - Eggs & Milk</li>
+                <li>Lunch - Chicken, Rice & Vegetables</li>
+                <li>Snack - Banana & Peanut Butter</li>
+                <li>Dinner - Fish, Sweet Potato & Salad</li>
+            </ul>
+        </div>
+
+        <div class="diet-card">
+            <h2>❤️ Healthy Lifestyle Diet</h2>
+            <ul>
+                <li>Breakfast - Fruits & Yogurt</li>
+                <li>Lunch - Chapati & Dal</li>
+                <li>Snack - Fresh Juice</li>
+                <li>Dinner - Vegetable Soup & Salad</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <br>
+
+    <center>
+        <a href="{{ url_for('home') }}">
+            <button>Back to Home</button>
+        </a>
+    </center>
+
+</body>
+</html>

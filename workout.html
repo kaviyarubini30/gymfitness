@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Fitness - Workout Plans</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/workout.css') }}">
+</head>
+<body>
+
+    <h1 class="title">Workout Plans</h1>
+
+    <div class="workout-container">
+
+        <!-- Beginner Workout -->
+        <div class="workout-card">
+            <h2>🏋️ Beginner Plan</h2>
+            <ul>
+                <li>Warm-up - 10 Minutes</li>
+                <li>Push-Ups - 3 × 10</li>
+                <li>Bodyweight Squats - 3 × 15</li>
+                <li>Plank - 30 Seconds</li>
+                <li>Stretching - 10 Minutes</li>
+            </ul>
+        </div>
+
+        <!-- Intermediate Workout -->
+        <div class="workout-card">
+            <h2>💪 Intermediate Plan</h2>
+            <ul>
+                <li>Bench Press - 4 × 10</li>
+                <li>Deadlift - 4 × 8</li>
+                <li>Pull-Ups - 3 × 10</li>
+                <li>Leg Press - 3 × 12</li>
+                <li>Running - 20 Minutes</li>
+            </ul>
+        </div>
+
+        <!-- Advanced Workout -->
+        <div class="workout-card">
+            <h2>🔥 Advanced Plan</h2>
+            <ul>
+                <li>Squats - 5 × 10</li>
+                <li>Deadlift - 5 × 8</li>
+                <li>Bench Press - 5 × 10</li>
+                <li>Burpees - 4 × 20</li>
+                <li>HIIT Cardio - 30 Minutes</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <br>
+
+    <center>
+        <a href="{{ url_for('home') }}">
+            <button>Back to Home</button>
+        </a>
+    </center>
+
+</body>
+</html>

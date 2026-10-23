@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Membership Plans</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/membership.css') }}">
+</head>
+<body>
+
+    <h1 class="title">Gym Membership Plans</h1>
+
+    <div class="container">
+
+        <!-- Silver Plan -->
+        <div class="card">
+            <h2>Silver Plan</h2>
+            <h3>₹999 / Month</h3>
+
+            <p>✔ Gym Access</p>
+            <p>✔ Cardio Training</p>
+            <p>✔ Locker Facility</p>
+
+            <form action="{{ url_for('membership') }}" method="POST">
+
+                <input type="text" name="fullname" placeholder="Enter Full Name" required>
+
+                <input type="email" name="email" placeholder="Enter Email" required>
+
+                <input type="hidden" name="plan" value="Silver">
+
+                <input type="hidden" name="price" value="999">
+
+                <button type="submit">Join Now</button>
+
+            </form>
+
+        </div>
+
+        <!-- Gold Plan -->
+        <div class="card">
+            <h2>Gold Plan</h2>
+            <h3>₹1999 / Month</h3>
+
+            <p>✔ Gym Access</p>
+            <p>✔ Cardio Training</p>
+            <p>✔ Personal Trainer</p>
+            <p>✔ Diet Plan</p>
+
+            <form action="{{ url_for('membership') }}" method="POST">
+
+                <input type="text" name="fullname" placeholder="Enter Full Name" required>
+
+                <input type="email" name="email" placeholder="Enter Email" required>
+
+                <input type="hidden" name="plan" value="Gold">
+
+                <input type="hidden" name="price" value="1999">
+
+                <button type="submit">Join Now</button>
+
+            </form>
+
+        </div>
+
+        <!-- Platinum Plan -->
+        <div class="card">
+            <h2>Platinum Plan</h2>
+            <h3>₹2999 / Month</h3>
+
+            <p>✔ Unlimited Gym Access</p>
+            <p>✔ Personal Trainer</p>
+            <p>✔ Diet Consultation</p>
+            <p>✔ Steam Bath</p>
+            <p>✔ Premium Support</p>
+
+            <form action="{{ url_for('membership') }}" method="POST">
+
+                <input type="text" name="fullname" placeholder="Enter Full Name" required>
+
+                <input type="email" name="email" placeholder="Enter Email" required>
+
+                <input type="hidden" name="plan" value="Platinum">
+
+                <input type="hidden" name="price" value="2999">
+
+                <button type="submit">Join Now</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <br>
+
+    <center>
+        <a href="{{ url_for('home') }}">
+            <button type="button">Back to Home</button>
+        </a>
+    </center>
+
+</body>
+</html>

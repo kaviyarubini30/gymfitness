@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Fitness - Trainers</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/trainer.css') }}">
+</head>
+<body>
+
+    <h1 class="title">Meet Our Expert Trainers</h1>
+
+    <div class="trainer-container">
+
+        <!-- Trainer 1 -->
+        <div class="trainer-card">
+            <img src="{{ url_for('static', filename='images/trainer1.jpg') }}" alt="Trainer 1">
+            <h2>Rahul Sharma</h2>
+            <p><strong>Specialization:</strong> Strength Training</p>
+            <p><strong>Experience:</strong> 6 Years</p>
+        </div>
+
+        <!-- Trainer 2 -->
+        <div class="trainer-card">
+            <img src="{{ url_for('static', filename='images/trainer2.jpg') }}" alt="Trainer 2">
+            <h2>Priya Nair</h2>
+            <p><strong>Specialization:</strong> Yoga & Fitness</p>
+            <p><strong>Experience:</strong> 5 Years</p>
+        </div>
+
+        <!-- Trainer 3 -->
+        <div class="trainer-card">
+            <img src="{{ url_for('static', filename='images/trainer3.jpg') }}" alt="Trainer 3">
+            <h2>Arun Kumar</h2>
+            <p><strong>Specialization:</strong> Cardio Training</p>
+            <p><strong>Experience:</strong> 7 Years</p>
+        </div>
+
+    
+
+    </div>
+
+    <br>
+
+    <center>
+        <a href="{{ url_for('home') }}">
+            <button>Back to Home</button>
+        </a>
+    </center>
+
+</body>
+</html>

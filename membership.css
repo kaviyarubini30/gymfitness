@@ -1,0 +1,50 @@
+body{
+    background:#111;
+    font-family:Arial;
+    color:white;
+    text-align:center;
+}
+
+.title{
+    margin-top:30px;
+    font-size:40px;
+}
+
+.container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:50px;
+}
+
+.card{
+    background:#222;
+    width:300px;
+    margin:20px;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+
+.card h2{
+    margin-bottom:20px;
+}
+
+.card h3{
+    color:red;
+    margin-bottom:20px;
+}
+
+.card p{
+    margin:10px 0;
+}
+
+button{
+    margin-top:20px;
+    padding:12px 25px;
+    background:red;
+    color:white;
+    border:none;
+    cursor:pointer;
+    font-size:16px;
+}

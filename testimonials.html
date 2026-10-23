@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Fitness - Testimonials</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/testimonials.css') }}">
+</head>
+<body>
+
+    <h1 class="title">What Our Members Say</h1>
+
+    <div class="testimonial-container">
+
+        <div class="testimonial-card">
+            <h2>⭐⭐⭐⭐⭐</h2>
+            <p>
+                "The trainers are very supportive and the equipment is excellent.
+                I achieved my fitness goals within a few months."
+            </p>
+            <h3>- Rahul</h3>
+        </div>
+
+        <div class="testimonial-card">
+            <h2>⭐⭐⭐⭐⭐</h2>
+            <p>
+                "The gym has a friendly environment and well-maintained facilities.
+                Highly recommended for beginners and professionals."
+            </p>
+            <h3>- Priya</h3>
+        </div>
+
+        <div class="testimonial-card">
+            <h2>⭐⭐⭐⭐⭐</h2>
+            <p>
+                "Affordable membership plans and personalized training sessions.
+                I enjoy every workout here."
+            </p>
+            <h3>- Arun</h3>
+        </div>
+
+        <div class="testimonial-card">
+            <h2>⭐⭐⭐⭐⭐</h2>
+            <p>
+                "Excellent fitness programs and diet guidance. The atmosphere is
+                motivating and energetic."
+            </p>
+            <h3>- Sneha</h3>
+        </div>
+
+    </div>
+
+    <br>
+
+    <center>
+        <a href="{{ url_for('home') }}">
+            <button>Back to Home</button>
+        </a>
+    </center>
+
+</body>
+</html>
